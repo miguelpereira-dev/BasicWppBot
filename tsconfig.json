@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"preserveConstEnums": true,
+		"strict": true,
+		"noImplicitAny": false,
+		"outDir": "venomBuilt",
+		"allowJs": false,
+		"target": "es6"
+	},
+	"include": ["./venomBased/**/*"],
+	"exclude": ["./node_modules/**/*"],
+  "files": ["./venomBased/index.ts"]
+}

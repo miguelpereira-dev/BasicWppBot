@@ -3,16 +3,24 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-basic": "node rawPuppeteer/index.js",
-    "start-venom": "node venomBased/index.js"
+    "start-venom": "node --experimental-json-modules venomBased/index.js",
+    "start": "node --experimental-json-modules venomBuilt/index.js",
+    "tsc": "tsc -w"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "puppeteer": "^9.1.1",
-    "venom-bot": "^3.0.16"
+    "venom-bot": "^3.0.16",
+    "youtube-audio-stream": "^0.3.7",
+    "ytdl": "^1.4.1",
+    "ytdl-core": "^4.8.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.2"
   }
 }
